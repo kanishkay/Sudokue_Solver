@@ -1,12 +1,12 @@
 # 🧩 Sudoku Solver - Constraint Satisfaction Problem (CSP)
 
 
-📐 A Python implementation of a Sudoku solver modeled as a Constraint Satisfaction Problem (CSP). Two approaches are compared — plain backtracking search and backtracking enhanced with AC-3 arc consistency inference — to evaluate the efficiency gained through constraint propagation.
+## 📐 A Python implementation of a Sudoku solver modeled as a Constraint Satisfaction Problem (CSP). Two approaches are compared — plain backtracking search and backtracking enhanced with AC-3 arc consistency inference — to evaluate the efficiency gained through constraint propagation.
 
-📁 Project Structure
+## 📁 Project Structure
 sudoku_solver.ipynb: Jupyter notebook containing the complete CSP formulation, solver implementations, grid visualization, and performance comparison between both approaches.
 
-📝 CSP Formulation
+## 📝 CSP Formulation
 Variables:
 Each of the 81 cells (i, j) in the 9×9 grid is a variable, where i is the row and j is the column (0–8).
 States:
@@ -24,7 +24,7 @@ Column: All 9 values in each column must be distinct.
 Box: All 9 values in each 3×3 sub-grid must be distinct.
 
 
-📈 Key Implementation Details
+## 📈 Key Implementation Details
 Grid Visualization:
 
 Rendered the 9×9 Sudoku board using Matplotlib's imshow with alternating shading for 3×3 boxes.
@@ -49,13 +49,17 @@ Domains are saved via deepcopy before each AC-3 call and fully restored on backt
 Returns False early if any domain becomes empty, pruning that branch immediately.
 
 
-📊 Results
+## 📊 Results
+
 Backtracking:           2714 assignments
+
 Backtracking with AC-3: 46 assignments
+
 Solutions match: True
+
 Backtracking with AC-3 requires significantly fewer assignments by detecting dead ends early through domain propagation, demonstrating the efficiency gain of inference-based search over naive backtracking.
 
-🛠️ Tools and Libraries Used
+## 🛠️ Tools and Libraries Used
 Python: Base language for all solver logic and visualization.
 Key Libraries:
 
@@ -64,5 +68,5 @@ collections.deque: Queue structure for AC-3 arc processing.
 copy: Deep copying domain state for safe backtracking and domain restoration.
 
 
-📫 Contact: www.linkedin.com/in/kanishkayadvv
-Author: Kanishka Yadav
+**📫 Contact:** www.linkedin.com/in/kanishkayadvv
+**Author:** Kanishka Yadav
