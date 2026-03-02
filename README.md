@@ -1,4 +1,4 @@
-#🧩 Sudoku Solver - Constraint Satisfaction Problem (CSP)
+# 🧩 Sudoku Solver - Constraint Satisfaction Problem (CSP)
 
 
 📐 A Python implementation of a Sudoku solver modeled as a Constraint Satisfaction Problem (CSP). Two approaches are compared — plain backtracking search and backtracking enhanced with AC-3 arc consistency inference — to evaluate the efficiency gained through constraint propagation.
